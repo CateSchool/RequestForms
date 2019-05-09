@@ -1,0 +1,16 @@
+PODS:
+  - SwiftSignatureView (2.0.2)
+
+DEPENDENCIES:
+  - SwiftSignatureView (~> 2.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SwiftSignatureView
+
+SPEC CHECKSUMS:
+  SwiftSignatureView: f9ea7317c6c5520b21190e499fbb859ae85c4e55
+
+PODFILE CHECKSUM: 28059c9c5d229e6b967853745141d08b173c8d1f
+
+COCOAPODS: 1.6.1
