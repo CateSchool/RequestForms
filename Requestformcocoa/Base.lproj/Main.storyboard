@@ -26,7 +26,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1260"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ha0-S2-GfF">
-                                                <rect key="frame" x="5" y="8" width="365" height="1009"/>
+                                                <rect key="frame" x="5" y="7.9999999999999432" width="365" height="1008.6666666666665"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Weekend Form" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b83-LP-XXL">
                                                         <rect key="frame" x="0.0" y="0.0" width="365" height="20.333333333333332"/>
@@ -130,15 +130,15 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X6S-kL-CEf">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qjS-f4-on8">
                                                         <rect key="frame" x="0.0" y="429" width="365" height="0.0"/>
                                                     </imageView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="egP-7E-nDF" customClass="SwiftSignatureView" customModule="SwiftSignatureView">
-                                                        <rect key="frame" x="0.0" y="437" width="365" height="129"/>
+                                                        <rect key="frame" x="0.0" y="437" width="365" height="128.66666666666663"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </view>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="sRR-CT-tfG">
-                                                        <rect key="frame" x="0.0" y="574" width="365" height="30"/>
+                                                        <rect key="frame" x="0.0" y="573.66666666666663" width="365" height="30"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Date" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cLO-22-A7P">
                                                                 <rect key="frame" x="0.0" y="0.0" width="52" height="30"/>
@@ -151,6 +151,9 @@
                                                                 <state key="normal" title="Save">
                                                                     <color key="titleColor" red="0.076803465520000003" green="0.13604310850000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="advisorSave:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7eK-WH-B0h"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1a-uG-wWC">
                                                                 <rect key="frame" x="329" y="0.0" width="36" height="30"/>
@@ -169,17 +172,23 @@
                                                         </constraints>
                                                     </stackView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coach Signature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RYJ-nd-aIb">
-                                                        <rect key="frame" x="0.0" y="612" width="365" height="20"/>
+                                                        <rect key="frame" x="0.0" y="611.66666666666663" width="365" height="20.333333333333371"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wSX-Sf-s15" customClass="SwiftSignatureView" customModule="SwiftSignatureView">
-                                                        <rect key="frame" x="0.0" y="640" width="365" height="128.66666666666663"/>
+                                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wSX-Sf-s15" customClass="SwiftSignatureView" customModule="SwiftSignatureView">
+                                                        <rect key="frame" x="0.0" y="640" width="365" height="120.66666666666663"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zmc-jZ-ET5">
+                                                                <rect key="frame" x="0.0" y="0.0" width="365" height="12.333333333333371"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                        </subviews>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </view>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="y71-aK-sJL">
-                                                        <rect key="frame" x="0.0" y="776.66666666666663" width="365" height="30"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="y71-aK-sJL">
+                                                        <rect key="frame" x="0.0" y="768.66666666666663" width="365" height="30"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Date" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GjM-El-Ik4">
                                                                 <rect key="frame" x="0.0" y="0.0" width="52" height="30"/>
@@ -192,6 +201,10 @@
                                                                 <state key="normal" title="Save">
                                                                     <color key="titleColor" red="0.13692636659999999" green="0.1137062906" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="advisorSave:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YpR-PC-rCB"/>
+                                                                    <action selector="coachSave:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oTV-ER-sQK"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Xp-Uz-dyw">
                                                                 <rect key="frame" x="329" y="0.0" width="36" height="30"/>
@@ -209,18 +222,21 @@
                                                             <constraint firstItem="0Xp-Uz-dyw" firstAttribute="centerY" secondItem="y71-aK-sJL" secondAttribute="centerY" id="eTB-O0-Xnq"/>
                                                         </constraints>
                                                     </stackView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student Signature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Icq-uZ-hqU">
-                                                        <rect key="frame" x="0.0" y="814.66666666666663" width="365" height="20.333333333333371"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Student Signature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Icq-uZ-hqU">
+                                                        <rect key="frame" x="0.0" y="806.66666666666663" width="365" height="20.333333333333371"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sdB-gt-dOE">
+                                                        <rect key="frame" x="0.0" y="835" width="365" height="0.0"/>
+                                                    </imageView>
                                                     <view opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" semanticContentAttribute="playback" translatesAutoresizingMaskIntoConstraints="NO" id="fYe-D2-ceJ" userLabel="studentSignature" customClass="SwiftSignatureView" customModule="SwiftSignatureView">
-                                                        <rect key="frame" x="0.0" y="843" width="365" height="128"/>
+                                                        <rect key="frame" x="0.0" y="843" width="365" height="127.66666666666663"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </view>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="BX4-od-Agr">
-                                                        <rect key="frame" x="0.0" y="979" width="365" height="30"/>
+                                                        <rect key="frame" x="0.0" y="978.66666666666674" width="365" height="30"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Date" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QAA-vB-Qoa">
                                                                 <rect key="frame" x="0.0" y="0.0" width="52" height="30"/>
@@ -233,6 +249,9 @@
                                                                 <state key="normal" title="Save">
                                                                     <color key="titleColor" red="0.13692636659999999" green="0.1137062906" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="studentSave:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R3x-lk-zFt"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gap-oP-wNO">
                                                                 <rect key="frame" x="329" y="0.0" width="36" height="30"/>
@@ -252,8 +271,12 @@
                                                     </stackView>
                                                 </subviews>
                                                 <constraints>
+                                                    <constraint firstItem="egP-7E-nDF" firstAttribute="centerX" secondItem="ha0-S2-GfF" secondAttribute="centerX" id="4aT-J6-CgL"/>
+                                                    <constraint firstItem="egP-7E-nDF" firstAttribute="centerX" secondItem="qjS-f4-on8" secondAttribute="centerX" id="5o0-lu-Kd6"/>
+                                                    <constraint firstItem="egP-7E-nDF" firstAttribute="centerY" secondItem="ha0-S2-GfF" secondAttribute="centerY" id="62K-ZU-O5y"/>
                                                     <constraint firstItem="fYe-D2-ceJ" firstAttribute="top" secondItem="ha0-S2-GfF" secondAttribute="top" constant="843" id="7eD-45-Z9l"/>
                                                     <constraint firstItem="wSX-Sf-s15" firstAttribute="top" secondItem="ha0-S2-GfF" secondAttribute="top" constant="640" id="MPi-kx-clW"/>
+                                                    <constraint firstItem="egP-7E-nDF" firstAttribute="top" secondItem="qjS-f4-on8" secondAttribute="top" id="d6s-M3-NT2"/>
                                                     <constraint firstAttribute="bottom" secondItem="egP-7E-nDF" secondAttribute="bottom" constant="443" id="dbp-Yk-KsS"/>
                                                     <constraint firstItem="fYe-D2-ceJ" firstAttribute="centerX" secondItem="ha0-S2-GfF" secondAttribute="centerX" id="gCd-hR-IRf"/>
                                                     <constraint firstItem="wSX-Sf-s15" firstAttribute="centerX" secondItem="ha0-S2-GfF" secondAttribute="centerX" id="haD-gz-qRS"/>
@@ -295,7 +318,9 @@
                     <size key="freeformSize" width="375" height="1250"/>
                     <connections>
                         <outlet property="advisorSignature" destination="egP-7E-nDF" id="zJA-6S-Ioa"/>
+                        <outlet property="advisorsigpic" destination="qjS-f4-on8" id="Nk2-AU-0nb"/>
                         <outlet property="coachSignature" destination="wSX-Sf-s15" id="qUk-Pr-wvP"/>
+                        <outlet property="coachsigpic" destination="Zmc-jZ-ET5" id="9pt-ST-ecq"/>
                         <outlet property="departureTextField" destination="G2L-Pe-Wdc" id="7Ml-6p-Lkm"/>
                         <outlet property="destinationTextField" destination="srO-MQ-xWX" id="Evh-S8-eHM"/>
                         <outlet property="dormTextField" destination="jeZ-N2-Axf" id="GsR-lZ-MiJ"/>
@@ -306,6 +331,7 @@
                         <outlet property="returnTextField" destination="COT-vp-dNd" id="G7z-l4-fVx"/>
                         <outlet property="studentSignature" destination="fYe-D2-ceJ" id="lld-Ae-ere"/>
                         <outlet property="studentsTextField" destination="xzx-zS-N3d" id="CUa-oy-Lqn"/>
+                        <outlet property="studentsigpic" destination="sdB-gt-dOE" id="Vqs-be-pe6"/>
                         <outlet property="transporterTextField" destination="JB0-a2-hMz" id="WJy-52-p1o"/>
                     </connections>
                 </viewController>

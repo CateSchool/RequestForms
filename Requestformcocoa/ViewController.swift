@@ -25,15 +25,45 @@ class ViewController: UIViewController, SwiftSignatureViewDelegate,UIPickerViewD
    
     @IBOutlet weak var advisorSignature: SwiftSignatureView!
    
+    @IBOutlet weak var advisorsigpic: UIImageView!
+    @IBAction func advisorSave(_ sender: Any) {
+        if let signatureImage = self.advisorSignature.signature {
+            self.advisorSignature.clear()
+            self.advisorSignature.isHidden = true
+            advisorsigpic.image = signatureImage
+        }
+        
+    }
     
     @IBAction func advisorClear(_ sender: Any) {
         advisorSignature.clear()
     }
     @IBOutlet weak var coachSignature: SwiftSignatureView!
+    
+    @IBOutlet weak var coachsigpic: UIImageView!
+    @IBAction func coachSave(_ sender: UIButton) {
+        if let signatureImage = self.coachSignature.signature {
+            self.coachSignature.clear()
+            self.coachSignature.isHidden = true
+            coachsigpic.image = signatureImage
+    
+        }
+    }
+    
     @IBAction func coachClear(_ sender: Any) {
         coachSignature.clear()
     }
     @IBOutlet weak var studentSignature: SwiftSignatureView!
+    
+    @IBOutlet weak var studentsigpic: UIImageView!
+    
+    @IBAction func studentSave(_ sender: UIButton) {
+        if let signatureImage = self.studentSignature.signature {
+            self.studentSignature.clear()
+            self.studentSignature.isHidden = true
+            studentsigpic.image = signatureImage
+        }
+    }
     @IBAction func studentClear(_ sender: Any) {
         studentSignature.clear()
     }
